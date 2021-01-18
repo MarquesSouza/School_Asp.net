@@ -37,8 +37,13 @@ ATIVIDADE
 
  - Diferencial
 [x] Utilização do bootstrap para layout
+
 [ ] Validação dos campos no servidor e com javascript
+
 [ ] Utilização de máscaras para telefone e CPF
+
 [ ] Busca das cidades por estado com ajax
+
 [x] Salvar todos as sqls de criação das tabelas e insersão dos registros em um arquivo dentro do projeto
+
 [x] EntityFramework

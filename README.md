@@ -1,13 +1,13 @@
 # School_Asp.net
 
-#FERRAMENTAS
+# FERRAMENTAS
  - Visual Stúdio Community 2019: https://visualstudio.microsoft.com/pt-br/vs/
  - Banco de dados sql server - Qualquer versão
 
-#TECNOLOGIA
+# TECNOLOGIA
   -C#, ASP.NET MVC, MsSQL
 
-#ATIVIDADE
+# ATIVIDADE
 
  - Criar um banco de dados nome: Escola
  

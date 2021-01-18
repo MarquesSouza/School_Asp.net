@@ -7,8 +7,7 @@ TECNOLOGIA
  - C#, ASP.NET MVC, MsSQL
 
 ATIVIDADE
- - Criar um diretório no git e compartilhar o projeto com hedersi@gmail.com
- 
+
  - Criar um banco de dados nome: Escola
  
  - Criar as seguintes tabelas

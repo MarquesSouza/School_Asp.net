@@ -1,13 +1,13 @@
 # School_Asp.net
 
-FERRAMENTAS
+#FERRAMENTAS
  - Visual Stúdio Community 2019: https://visualstudio.microsoft.com/pt-br/vs/
  - Banco de dados sql server - Qualquer versão
 
-TECNOLOGIA
- - C#, ASP.NET MVC, MsSQL
+#TECNOLOGIA
+  -C#, ASP.NET MVC, MsSQL
 
-ATIVIDADE
+#ATIVIDADE
 
  - Criar um banco de dados nome: Escola
  
@@ -35,7 +35,8 @@ ATIVIDADE
 	Todas os campos da tabela devem ser contemplados no cadastro
 	Ao final do formulário deve ter um botão salvar, que irá salvar as informações inseridas no banco de dados e um botão voltar que voltará para a tela de listagem
 
- - Diferencial
+ # Diferencial
+ 
 [x] Utilização do bootstrap para layout
 
 [ ] Validação dos campos no servidor e com javascript

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<School.Models.City>
+
+@{
+    ViewBag.Title = "Listar Cidade";
+}
+
+<h2>Lista de Cidades</h2>
+
+<p>
+    <a href="../Cities/create" class="btn btn-default btn-lg">Creatar Nova </a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Uf)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Uf)
+        </td>
+        <td>
+            <a href="../Cities/edit/@item.Id" class="btn btn-primary ">Editar </a> |
+            <a href="../Cities/Details/@item.Id" class="btn btn-success ">Detalhes </a> |
+            <a href="../Cities/Delete/@item.Id" class="btn btn-danger ">Deletar </a>
+                      
+        </td>
+    </tr>
+}
+
+</table>

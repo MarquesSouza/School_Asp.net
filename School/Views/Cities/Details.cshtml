@@ -1,0 +1,33 @@
+﻿@model School.Models.City
+
+@{
+    ViewBag.Title = "Detalhes Cidade";
+}
+
+<h2>Detalhes Cidade</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uf)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <a href="../Cities/edit/@Model.Id" class="btn btn-primary ">Editar </a> |
+    <a href="../../Cities/Index" class="btn btn-primary">Ir para Lista </a>
+</p>

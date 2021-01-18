@@ -1,0 +1,59 @@
+Tem a possibilidade de fazer atraves do entityframework a migração dos dados
+-------------------------------------------------------------
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+
+GO
+
+CREATE TABLE [Cities] (
+    [Id] int NOT NULL IDENTITY,
+    [Nome] nvarchar(max) NULL,
+    [Uf] nvarchar(max) NULL,
+    CONSTRAINT [PK_Cities] PRIMARY KEY ([Id])
+);
+
+GO
+
+CREATE TABLE [Students] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    [Cpf] nvarchar(max) NULL,
+    [Rg] int NOT NULL,
+    [Telephone] int NOT NULL,
+    [Address] nvarchar(max) NULL,
+    [Number] int NOT NULL,
+    [CityId] int NULL,
+    [IdCity] int NOT NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Students_Cities_CityId] FOREIGN KEY ([CityId]) REFERENCES [Cities] ([Id]) ON DELETE NO ACTION
+);
+
+GO
+
+CREATE INDEX [IX_Students_CityId] ON [Students] ([CityId]);
+
+GO
+
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210117165154_Initial', N'3.1.11');
+
+GO
+
+-----------------------------------------------------------------------------------------------------
+
+USE [webescola]
+GO
+
+INSERT INTO [dbo].[Cities]
+           ([Nome]
+           ,[Uf])
+     VALUES
+           ('Paraiso do Tocantins','TO')
+GO
+

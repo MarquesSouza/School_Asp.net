@@ -12,9 +12,11 @@ ATIVIDADE
  [x] Criar um banco de dados nome: Escola
  
  [x] Criar as seguintes tabelas
+	
 	[x] Aluno ( Id, Nome, CPF, RG, Telefone , Endereco, Número (do endereço), IdCidade) 
 		* todos os campos são obrigatórios exeto o RG
 		
+	
 	[x] Cidade ( Nome, UF) (esta tabela deve ser populada manualmente, não precisa de todos os registros do Brasil, basta alguns para testes)
 
  [x] Criar uma aplicação utilizando ASP.NET MVC
